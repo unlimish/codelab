@@ -30,7 +30,7 @@ class _RandomWordsState extends State<RandomWords> {
           if (alreadySaved) {
             _saved.remove(pair);
           } else {
-            saved.add(pair);
+            _saved.add(pair);
           }
         });
       },
