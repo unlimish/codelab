@@ -9,7 +9,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    var diceImage: ImageView? = null
+    lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 //        Toast.makeText(this, "button clicked"
 //        Toast.LENGTH_SHORT).show()
 
-        val diceImage: ImageView = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.dice_image)
 
         val drawableResource = when (randomInt) {
             1 -> R.drawable.dice_1
