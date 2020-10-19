@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
 //        Toast.makeText(this, "button clicked"
 //        Toast.LENGTH_SHORT).show()
 
-        val resultText: TextView = findViewById(R.id.result_text)
-        resultText.text = randomInt.toString()
-
         val diceImage: ImageView = findViewById(R.id.dice_image)
 
         val drawableResource = when (randomInt) {
